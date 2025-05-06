@@ -1,0 +1,180 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuan-Hsien Lee | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #999; /* pure white */
+      --text-color: #ffffff; /* black */
+      --highlight: #ffffff; /* black */
+    }
+
+    body {
+      margin: 0;
+      font-family: Helvetica;
+      background: linear-gradient(to bottom, #000000 0%, #eeeeee 100%);
+      background-image: linear-gradient(to bottom, #000000 0%, #eeeeee 100%), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><rect width="1" height="1" fill="black"/></svg>');
+      background-blend-mode: overlay;
+      background-repeat: repeat;
+      color: #ffffff;
+      min-height: 100vh;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 90px;
+      padding-bottom: 60px;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: calc(100vh - 60px);
+      box-sizing: border-box;
+    }
+
+    .corner-frame {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border: 3px solid #ffffff;
+      pointer-events: none;
+    }
+
+    .corner-top-left {
+      top: 60px;
+      left: 60px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .corner-bottom-right {
+      bottom: 60px;
+      right: 60px;
+      border-left: none;
+      border-top: none;
+    }
+
+    header {
+      padding: 2rem 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-top: 0.25rem;
+    }
+
+    nav {
+      margin-top: 2rem;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-divider {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      align-self: flex-start;
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: var(--highlight);
+      font-weight: bold;
+      margin: 1rem 0;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    main {
+      position: relative;
+      flex-grow: 1;
+    }
+
+    .intro-text {
+      position: absolute;
+      bottom: 80px;
+      right: 7.5%;
+      max-width: 300px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      display: flex;
+      align-items: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #ffffff;
+      margin-top: auto;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  
+  
+
+  <div class="corner-frame corner-top-left"></div>
+  <div class="corner-frame corner-bottom-right"></div>
+
+  <div class="content-wrapper">
+    <header>
+      <h1>Kuan-Hsien Lee</h1>
+      <h2>Data Analyst</h2>
+      <nav>
+        <div class="nav-divider">&bull;</div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    
+<div class="intro-text">
+  <p>
+    Born in Taiwan.<br>
+    I believe data<br>
+    analytics can empower<br>
+    decisions, reveal patterns,<br>
+    and bring clarity.<br>
+    With a mission to<br>
+    explore the possibilities of<br>
+    data, I pursue storytelling<br>
+    through numbers, insights,<br>
+    and visualizations.
+  </p>
+</div>
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;">
+  <img src="/mnt/data/1740760120275.jpeg" alt="Kuan-Hsien Lee" style="width: 220px; height: auto; border-radius: 4px; filter: grayscale(100%); mix-blend-mode: lighten;">
+</div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Kuan-Hsien Lee. All rights reserved.
+  </footer>
+
+</body>
+</html>
